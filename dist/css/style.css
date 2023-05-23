@@ -115,6 +115,7 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  border: 1px solid teal;
 }
 
 .page-header {
