@@ -1,18 +1,16 @@
 :root {
   --background-color: #ffffff;
-  //   --secondary-bcg-color: #f5f4fa;
-  //   --footer-bcg: #2f303a;
+  --secondary-bcg-color: #f8f0e3;
+
   --accent-color: #ff9c08;
 
-  //   --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  //   --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --box-shadow: 0px 2px 12px rgba(43, 43, 43, 0.06);
 
-  //   --secondary-text-color: #ffffff;
   --title-text-color: #090909;
   --primary-text-color: #6e6e6e;
   --main-fonts: DMSans-Regular;
   --title-fonts: Roboto-Bold;
 
-  //   --card-set-gap: 30px;
   --transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

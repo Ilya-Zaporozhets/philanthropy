@@ -1,0 +1,95 @@
+.about-section {
+  background-color: var(--secondary-bcg-color);
+
+  &__title {
+    margin-bottom: 17px;
+
+    font-family: var(--title-fonts);
+
+    font-size: 42px;
+    line-height: 1.4;
+
+    color: var(--title-text-color);
+
+    &::before {
+      content: 'ABOUT US';
+      display: block;
+      margin-bottom: 20px;
+
+      font-family: var(--main-fonts);
+      font-size: 20px;
+      line-height: 1.1;
+      letter-spacing: 1.2px;
+
+      color: var(--accent-color);
+    }
+  }
+
+  &__description {
+    font-family: var(--main-fonts);
+
+    font-size: 18px;
+    line-height: 1.4;
+
+    color: var(--primary-text-color);
+  }
+  &__img {
+    display: block;
+    width: 596px;
+    margin-bottom: 32px;
+  }
+  &__nav {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 48px;
+    margin-top: 50px;
+    & .main-button {
+      margin-right: 28px;
+    }
+  }
+}
+
+.about-wrapper {
+  display: flex;
+  gap: 28px;
+
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.left-block {
+  & .about-section__description {
+    margin-bottom: 50px;
+  }
+}
+
+.right-block {
+  & .about-section__img {
+    margin-bottom: 47px;
+  }
+  & .about-section__description {
+    margin-bottom: 20px;
+  }
+}
+
+.about-list {
+  list-style: none;
+  &__item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-family: var(--main-fonts);
+    font-size: 18px;
+    line-height: 20px;
+
+    color: var(--title-text-color);
+  }
+  &__icon {
+    width: 26px;
+    height: 26px;
+
+    margin-right: 25px;
+  }
+}
