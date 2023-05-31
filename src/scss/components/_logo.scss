@@ -1,13 +1,21 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 40px;
 
   font-family: var(--title-fonts);
   font-size: 18px;
   line-height: 1.8;
 
   color: var(--title-text-color);
+
+  transition: color var(--transition-property);
+  transition: text-shadow var(--transition-property);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    text-shadow: var(--text-shadow);
+  }
 }
 
 .logo-icon {

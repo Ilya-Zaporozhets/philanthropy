@@ -1,15 +1,21 @@
 .results-section {
-  padding-top: 100px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
 }
 
 .results {
-  display: flex;
-  padding-bottom: 182px;
-
+  padding-bottom: 30px;
   &__description {
-    width: 50%;
     margin-top: 90px;
-    margin-right: 116px;
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 116px;
+    }
   }
 
   &__title {
@@ -33,6 +39,17 @@
       color: var(--accent-color);
     }
   }
+
+  &__img {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 182px;
+  }
 }
 
 .results-list {
@@ -47,30 +64,68 @@
   &__item {
     display: flex;
     align-items: center;
-    width: 246px;
+    width: 180px;
     margin-bottom: 28px;
+
+    cursor: default;
+
+    transition: box-shadow var(--transition-property);
+
+    &:hover,
+    &:focus {
+      border-radius: 57px;
+      box-shadow: var(--box-shadow-accent);
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 130px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 246px;
+    }
   }
 
   &__wrapper {
     &_count {
       font-family: var(--title-fonts);
-      font-size: 38px;
+      font-size: 18px;
+
       line-height: 1.5;
 
       color: var(--title-text-color);
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 38px;
+      }
     }
 
     &_label {
       font-family: var(--main-fonts);
-      font-size: 18px;
+      font-size: 12px;
       line-height: 1.1;
 
       color: var(--primary-text-color);
     }
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+    }
   }
 
   &__img {
-    width: 76px;
-    height: 76px;
+    width: 36px;
+    height: 36px;
+
+    @media screen and (min-width: 1200px) {
+      width: 76px;
+      height: 76px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
   }
 }

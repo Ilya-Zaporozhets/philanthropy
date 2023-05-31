@@ -1,0 +1,144 @@
+.footer {
+  background-color: var(--secondary-bcg-color);
+
+  &__wrapper {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    padding: 10px;
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid #cbc1b9;
+    & .logo {
+      margin-bottom: 27px;
+      margin-right: 59px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      border-bottom: none;
+      margin-bottom: 0px;
+      margin-right: 19px;
+      border-right: 1px solid #dad1ca;
+    }
+  }
+
+  &__info {
+    margin-bottom: 20px;
+
+    font-family: var(--main-fonts);
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #3f3f3f;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_item {
+      flex-basis: calc(100% / 2 - 28px);
+      margin-bottom: 28px;
+    }
+
+    &_link {
+      font-family: var(--main-fonts);
+      font-size: 18px;
+      line-height: 1.1;
+
+      color: #3f3f3f;
+
+      transition: text-shadow, color var(--transition-property);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+        text-shadow: var(--text-shadow);
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    // padding: 140px 24px;
+  }
+
+  &__action {
+    position: relative;
+    overflow: hidden;
+
+    padding: 46px 64px;
+
+    text-align: center;
+
+    border-radius: 14px;
+    background-color: var(--accent-color);
+
+    &_title {
+      margin-bottom: 21px;
+      text-align: start;
+
+      font-family: var(--title-fonts);
+      font-size: 24px;
+      line-height: 1.4;
+
+      color: var(--title-rext-color);
+    }
+
+    & .main-button {
+      box-sizing: border-box;
+      width: 292px;
+      margin-bottom: 18px;
+
+      background-color: #090909;
+      color: #fff;
+
+      transition: color var(--transition-property);
+      transition: background-color var(--transition-property);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+        background-color: #fff;
+      }
+    }
+
+    & .secondary-button {
+      box-sizing: border-box;
+      width: 292px;
+      background-color: #fff;
+    }
+  }
+}
+
+.footer__action::before,
+.footer__action::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+
+  pointer-events: none;
+}
+
+.footer__action::before {
+  left: 0;
+  background-image: url('../img/icons.svg#spot1');
+  background-repeat: no-repeat;
+}
+
+.footer__action::after {
+  right: 0;
+  background-image: url('../img/icons.svg#spot2');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

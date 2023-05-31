@@ -1,26 +1,47 @@
 .action-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  overflow: hidden;
+
+  max-width: 1100px;
+
+  text-align: center;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   border-radius: 48px;
   background-color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
 }
 
 .action-section__title {
-  margin-left: 90px;
   font-family: var(--title-fonts);
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1.4;
   color: var(--title-fonts-color);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 90px;
+    font-size: 42px;
+  }
 }
 
 .action-section .secondary-button {
-  margin-right: 90px;
   border: none;
   background-color: #ffff;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 90px;
+    margin-top: 40px;
+  }
 }
 
 .action-section::before,

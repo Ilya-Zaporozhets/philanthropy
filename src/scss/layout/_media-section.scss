@@ -31,10 +31,23 @@
   &__nav {
     margin-bottom: 64px;
     & .main-button {
-      margin-right: 28px;
+      margin-right: 8px;
 
       background-color: var(--title-text-color);
       color: #ffffff;
+
+      transition: color var(--transition-property);
+      transition: background-color var(--transition-property);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+        background-color: #fff;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-right: 28px;
+      }
     }
 
     & .secondary-button {
@@ -49,6 +62,7 @@
 .media-list {
   display: flex;
   justify-content: space-between;
+  margin: auto;
   gap: 48px;
   text-align: start;
 

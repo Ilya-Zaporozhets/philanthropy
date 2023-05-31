@@ -11,6 +11,19 @@
     line-height: 1.4;
 
     color: var(--title-text-color);
+
+    &::before {
+      content: 'HOW WE HELP?';
+      display: block;
+
+      margin-bottom: 20px;
+
+      font-family: var(--main-fonts);
+      font-size: 20px;
+      line-height: 1.1;
+
+      color: var(--accent-color);
+    }
   }
 }
 
@@ -37,6 +50,13 @@
     border: 1px solid #f4e4d4;
     box-shadow: var(--box-shadow);
     border-radius: 12px;
+
+    transition: box-shadow var(--transition-property);
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--box-shadow-accent);
+    }
   }
 
   &__icon {

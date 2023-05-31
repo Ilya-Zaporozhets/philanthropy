@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-  </head>
   <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,9 +10,7 @@
 </head>
 
 
-
   <body>
-
     <header class="page-header">
   <div class="header-wrapper container">
     <nav class="main-nav">
@@ -36,13 +32,50 @@
         </li>
       </ul>
     </nav>
+    <button type="button" class="burger-menu" data-menu-button>
+      <svg class="burger-icon">
+        <use href="img/icons.svg#menu"></use>
+      </svg>
+    </button>
     <button class="main-button" type="button">Donate now</button>
+  </div>
+
+  <div class="mobile-menu" data-menu>
+    <button type="button" class="burger-btn_close" data-menu-close>
+      <svg class="burger-btn__close-icon">
+        <use href="img/icons.svg#close"></use>
+      </svg>
+    </button>
+    <a href="./index.html" class="logo link">
+      <svg class="logo-icon">
+        <use href="img/icons.svg#logo"></use>
+      </svg>
+      <p>Philanthropy X</p>
+    </a>
+
+    <ul class="mobile-navigation__list list">
+      <li class="mobile-navigation__item">
+        <a
+          href="./index.html"
+          class="mobile-navigation__link link mobile-current"
+          >Home</a
+        >
+      </li>
+      <li class="mobile-navigation__item">
+        <a href="" class="mobile-navigation__link link" target="_blank"
+          >About</a
+        >
+      </li>
+      <li class="mobile-navigation__item">
+        <a href="" class="mobile-navigation__link link">Pages</a>
+      </li>
+    </ul>
   </div>
 </header>
 
 
     <main>
-    <section class="hero-section container">
+      <section class="hero-section container">
   <div class="hero-description">
     <h1 class="hero-description__title">Giving help to those who need it</h1>
     <p class="hero-description__text">
@@ -59,8 +92,7 @@
     <img class="" src="img/hero.jpg" alt="фотографія з дітьми" />
   </picture>
 </section>
-
-    <section class="stats-section">
+ <section class="stats-section">
   <h2 class="stats-section__title">Our help</h2>
   <div class="stats-section__wrapper container">
     <ul class="stats-list">
@@ -84,7 +116,7 @@
   </div>
 </section>
 
-    <section class="about-section">
+     <section class="about-section">
   <article class="about-wrapper container">
     <div class="left-block">
       <h2 class="about-section__title">
@@ -167,8 +199,8 @@
     </div>
   </article>
 </section>
- 
-    <section class="results-section">
+    
+      <section class="results-section">
   <div class="results container">
     <div class="results__description">
       <h2 class="results__title">
@@ -232,13 +264,13 @@
           srcset="img/boy.jpg 1x, img/boy2x.jpg 2x"
           media="(min-width: 480px)"
         />
-        <img class="team__img" src="img/boy.jpg" alt="Портрет сотрудника" />
+        <img class="team__img" src="img/boy.jpg" alt="Portrait of a boy" />
       </picture>
     </div>
   </div>
 </section>
 
-    <section class="media-section">
+      <section class="media-section">
   <div class="media-wrapper container">
     <p class="media-wrapper__label">Take a look at our video</p>
     <h2 class="media-section__title">
@@ -283,8 +315,8 @@
     </ul>
   </div>
 </section>
-
-    <section class="help-section">
+ 
+      <section class="help-section">
   <div class="help-wrapper container">
     <h2 class="help-section__title">
       What are we doing to assist <br />
@@ -367,21 +399,230 @@
   </div>
 </section>
 
-    <section class="action-section container">
+      <section class="action-section container">
   <h2 class="action-section__title">
     Join us and let’s make <br />
     a better world, today
   </h2>
   <a href=" " class="secondary-button link">About our charity</a>
 </section>
+ 
+      <section class="testimonials-section">
+  <div class="testimonials container">
+    <div class="testimonials__overlay">
+      <picture class="testimonials__img">
+        <source
+          srcset="img/amara.webp 1x, img/amara2x.webp 2x"
+          media="(min-width: 480px)"
+          type="image/webp"
+        />
+        <source
+          srcset="img/amara.jpg 1x, img/amara2x.jpg 2x"
+          media="(min-width: 480px)"
+        />
+        <img class="team__img" src="img/amara.jpg" alt="Портрет сотрудника" />
+      </picture>
+
+      <div class="testimonials__article">
+        <p class="testimonials__article_text">
+          “Ultrices eros in cursus turpis massa tincidunt sem nulla pharetra
+          diam sit amet nisl suscipit adipis.”
+        </p>
+        <p class="testimonials__article_name">Amara Onai</p>
+        <p class="testimonials__article_location">Citizen of South Africa</p>
+      </div>
+    </div>
+
+    <div class="testimonials__description">
+      <h2 class="testimonials__title">
+        See how we are <br />
+        making a difference
+      </h2>
+
+      <p class="testimonials__text">
+        Vitae aliquet nec ullamcorper sit amet risus nullam eget felis etolme
+        netus et malesuada fames urna nec tincidunt praesen
+      </p>
+
+      <ul class="testimonials-list list">
+        <li class="testimonials-list__item">
+          <svg class="testimonials-list__icon">
+            <use href="img/icons.svg#chb"></use>
+          </svg>
+          <p class="testimonials-list__text">
+            Excepteur sint occaecat cupidatat non proident
+          </p>
+        </li>
+        <li class="testimonials-list__item">
+          <svg class="testimonials-list__icon">
+            <use href="img/icons.svg#chb"></use>
+          </svg>
+          <p class="testimonials-list__text">
+            Pellentesque elit ullamcorper dignissim
+          </p>
+        </li>
+        <li class="testimonials-list__item">
+          <svg class="testimonials-list__icon">
+            <use href="img/icons.svg#chb"></use>
+          </svg>
+          <p class="testimonials-list__text">
+            Nibh mauris cursus mattis molestie a iaculis
+          </p>
+        </li>
+      </ul>
+
+      <button class="main-button">Donate now</button>
+    </div>
+  </div>
+</section>
+
+      <section class="news-section slide-container">
+  <h2 class="news-section__title">Read our latest news</h2>
+
+  <div class="news container">
+    <ul class="news__list list slider">
+      <li class="news__item slider__item">
+        <picture class="news__img">
+          <source
+            srcset="img/vegetables.webp 1x, img/vegetables2x.webp 2x"
+            type="image/webp"
+          />
+          <source srcset="img/vegetables.jpg 1x, img/vegetables2x.jpg 2x" />
+          <img src="img/vegetables.jpg" alt="Children play sports" />
+        </picture>
+
+        <div class="news__description">
+          <span class="news__description_date">Feb 11, 2022</span>
+          <h2 class="news__description_title">
+            What to donate to a food bank and what to avoid ?
+          </h2>
+
+          <a href="" class="secondary-button link">Read more</a>
+        </div>
+      </li>
+      <li class="news__item slider__item">
+        <img class="news__img" src="img/vegetables.jpg" alt="" />
+
+        <picture class="news__img">
+          <source
+            srcset="img/clothes.webp 1x, img/clothes2x.webp 2x"
+            type="image/webp"
+          />
+          <source srcset="img/clothes.jpg 1x, img/clothes2x.jpg 2x" />
+          <img src="img/clothes.jpg" alt="Children play sports" />
+        </picture>
+
+        <div class="news__description">
+          <span class="news__description_date">Feb 11, 2022</span>
+          <h2 class="news__description_title">
+            13 ways to give to charity without breaking your budget
+          </h2>
+
+          <a href="" class="secondary-button link">Read more</a>
+        </div>
+      </li>
+      <li class="news__item slider__item">
+        <picture class="news__img">
+          <source
+            srcset="img/vegetables.webp 1x, img/vegetables2x.webp 2x"
+            type="image/webp"
+          />
+          <source srcset="img/vegetables.jpg 1x, img/vegetables2x.jpg 2x" />
+          <img src="img/vegetables.jpg" alt="Children play sports" />
+        </picture>
+
+        <div class="news__description">
+          <span class="news__description_date">Feb 11, 2022</span>
+          <h2 class="news__description_title">
+            What to donate to a food bank and what to avoid ?
+          </h2>
+
+          <a href="" class="secondary-button link">Read more</a>
+        </div>
+      </li>
+      <li class="news__item slider__item">
+        <img class="news__img" src="img/vegetables.jpg" alt="" />
+
+        <picture class="news__img">
+          <source
+            srcset="img/clothes.webp 1x, img/clothes2x.webp 2x"
+            type="image/webp"
+          />
+          <source srcset="img/clothes.jpg 1x, img/clothes2x.jpg 2x" />
+          <img src="img/clothes.jpg" alt="Children play sports" />
+        </picture>
+
+        <div class="news__description">
+          <span class="news__description_date">Feb 11, 2022</span>
+          <h2 class="news__description_title">
+            13 ways to give to charity without breaking your budget
+          </h2>
+
+          <a href="" class="secondary-button link">Read more</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="news-section__nav">
+    <button class="main-button">Donate now</button>
+    <a href="" class="secondary-button link">Read more news</a>
+  </div>
+</section>
+  
+
+    <footer class="footer">
+  <div class="footer__wrapper container">
+    <div class="footer__logo">
+      <a href="./index.html" class="logo link">
+        <svg class="logo-icon">
+          <use href="img/icons.svg#logo"></use>
+        </svg>
+        <p>Philanthropy X</p>
+      </a>
+
+      <p class="footer__info">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris.
+      </p>
+    </div>
+    <div class="footer__menu">
+      <ul class="footer__list list">
+        <li class="footer__list_item">
+          <a href="" class="footer__list_link link">Home</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="" class="footer__list_link link">About</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="" class="footer__list_link link">Blog</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="" class="footer__list_link link">Blog post</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="" class="footer__list_link link">Donate</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="" class="footer__list_link link">Donate single</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="" class="footer__list_link link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__action">
+      <h2 class="footer__action_title">
+        Join us and let’s make a better world, today
+      </h2>
+
+      <button class="main-button" type="button">Donate now</button>
+      <a href="" class="secondary-button link">More ways to help</a>
+    </div>
+  </div>
+</footer>
 
 
-
-    </main>
-
-
-    <footer></footer>
-
-
-   <script src="js/app.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>

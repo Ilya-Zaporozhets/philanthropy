@@ -35,17 +35,29 @@
   }
   &__img {
     display: block;
-    width: 596px;
+    width: 100%;
     margin-bottom: 32px;
   }
   &__nav {
+    & .main-button {
+      margin-bottom: 10px;
+    }
+    & .secondary-button {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+      & .main-button {
+        margin-right: 28px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: end;
     margin-bottom: 48px;
     margin-top: 50px;
-    & .main-button {
-      margin-right: 28px;
-    }
   }
 }
 

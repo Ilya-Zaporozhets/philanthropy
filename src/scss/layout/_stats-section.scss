@@ -8,6 +8,7 @@
 
 .stats-list {
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   padding-top: 30px;
   padding-bottom: 100px;
@@ -42,5 +43,20 @@
     line-height: 22px;
 
     color: var(--primary-text-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    f &__item {
+      margin-bottom: 28px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    &__item {
+      margin-bottom: 0px;
+    }
   }
 }

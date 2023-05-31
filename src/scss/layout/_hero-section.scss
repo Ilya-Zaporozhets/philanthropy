@@ -1,7 +1,19 @@
 .hero-section {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   & .main-button {
     margin-right: 28px;
+  }
+}
+.hero-img {
+  width: 50%;
+  margin-left: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin-left: 43px;
   }
 }
 .hero-description {
@@ -45,7 +57,6 @@
     color: var(--primary-text-color);
   }
 }
-.hero-img {
-  width: 100%;
-  margin-left: 43px;
+
+@media screen and (min-width: 768px) {
 }
