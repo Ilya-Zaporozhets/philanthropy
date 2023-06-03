@@ -1,11 +1,12 @@
 .news-section {
   text-align: center;
+  margin-bottom: 50px;
 
   &__title {
     margin-bottom: 49px;
 
     font-family: var(--title-fonts);
-    font-size: 42px;
+    font-size: 32px;
     line-height: 1.4;
 
     color: var(--title-text-color);
@@ -26,53 +27,15 @@
 
   &__nav {
     & .main-button {
-      margin-right: 28px;
+      margin-right: 18px;
     }
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 100px;
   }
 }
 .news {
-  &__list {
-    display: flex;
-    justify-content: space-between;
-
-    @media screen and (min-width: 768px) {
-      margin-bottom: 65px;
-    }
-  }
-
-  &__item {
-    display: block;
-    position: relative;
-  }
-
   &__description {
-    box-sizing: border-box;
-    width: 186px;
-    padding: 10px;
-
-    position: absolute;
-    top: 95%;
-
-    text-align: start;
-
-    background: #ffffff;
-    border: 1px solid #f0ece8;
-    box-shadow: 0px 2px 12px rgba(43, 43, 43, 0.08);
-    border-radius: 12px;
-
-    transition: box-shadow var(--transition-property);
-
-    &:hover,
-    &:focus {
-      box-shadow: var(--box-shadow-accent);
-    }
-
     &_date {
       display: block;
+      margin-top: 10px;
       margin-bottom: 34px;
 
       font-family: var(--main-fonts);
@@ -83,29 +46,46 @@
     }
 
     &_title {
-      margin-bottom: 29px;
+      margin-bottom: 28px;
 
       font-family: var(--title-fonts);
-      font-size: 12px;
+      font-size: 16px;
       line-height: 1.5;
 
       color: var(--title-text-color);
+    }
+  }
+}
+//****************************media************************
 
-      @media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+  .news-section {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__nav {
+      & .main-button {
+        margin-right: 28px;
+      }
+    }
+  }
+  .news {
+    &__description {
+      &_title {
         font-size: 24px;
       }
     }
-
-    @media screen and (min-width: 768px) {
-      top: 75%;
-
-      width: 330px;
-      padding: 15px;
-    }
-    @media screen and (min-width: 1200px) {
-      top: 75%;
-
-      width: 548px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .news-section {
+    margin-bottom: 100px;
+  }
+  .news {
+    &__description {
       padding: 44px 81px 49px 49px;
     }
   }

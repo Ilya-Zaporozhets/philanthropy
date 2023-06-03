@@ -3,8 +3,8 @@
   background-color: transparent;
 }
 .burger-icon {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 
   transition: fill var(--transition-property);
 
@@ -25,7 +25,7 @@
   height: 100vh;
 
   background-color: #fff;
-  padding: 48px 40px;
+  padding: 20px;
 
   flex-direction: column;
   justify-content: space-between;
@@ -50,8 +50,8 @@
   position: absolute;
   z-index: 2;
 
-  top: 20px;
-  right: 100px;
+  top: 10;
+  right: 15%;
 }
 
 .burger-btn__close-icon {
@@ -65,6 +65,10 @@
   &:focus {
     fill: var(--accent-color);
   }
+}
+
+.mobile-menu .logo {
+  margin-bottom: 30px;
 }
 
 .mobile-navigation__link {

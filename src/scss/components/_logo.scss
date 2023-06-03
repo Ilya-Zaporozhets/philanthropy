@@ -3,7 +3,7 @@
   align-items: center;
 
   font-family: var(--title-fonts);
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.8;
 
   color: var(--title-text-color);
@@ -22,4 +22,22 @@
   width: 35px;
   height: 31px;
   margin-right: 9px;
+}
+
+//****************************media************************
+
+@media screen and (min-width: 480px) {
+  .logo {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 18px;
+  }
 }

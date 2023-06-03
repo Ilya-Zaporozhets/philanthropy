@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  max-width: 1100px;
+  margin: auto;
 
   text-align: center;
 
@@ -21,27 +21,18 @@
     padding-bottom: 160px;
   }
 }
-
 .action-section__title {
+  margin-bottom: 28px;
+
   font-family: var(--title-fonts);
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.4;
   color: var(--title-fonts-color);
-
-  @media screen and (min-width: 768px) {
-    margin-left: 90px;
-    font-size: 42px;
-  }
 }
 
 .action-section .secondary-button {
   border: none;
   background-color: #ffff;
-
-  @media screen and (min-width: 768px) {
-    margin-right: 90px;
-    margin-top: 40px;
-  }
 }
 
 .action-section::before,
@@ -50,7 +41,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 30%;
+  width: 50%;
 
   pointer-events: none;
 }
@@ -67,4 +58,35 @@
   background-image: url('../img/icons.svg#spot2');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+//****************************media************************
+
+@media screen and (min-width: 480px) {
+  .action-section__title {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+  .action-section {
+    //   max-width: 1100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  .action-section__title {
+    margin-left: 90px;
+    font-size: 42px;
+  }
+
+  .action-section .secondary-button {
+    margin-right: 90px;
+  }
 }
