@@ -70,11 +70,11 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
-section {
-  min-width: 100vw;
+body {
+  background-color: var(--background-color);
 }
 
 .container {
@@ -419,10 +419,10 @@ section {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+  padding-bottom: 10px;
   background-color: var(--background-color);
 }
 .header-wrapper .main-button {
-  margin-right: 30px;
   font-size: 12px;
 }
 
@@ -469,12 +469,11 @@ section {
     padding: 0;
   }
 }
-.hero-section .main-button {
-  margin-right: 12px;
+.hero-section {
+  background-color: var(--background-color);
 }
-
-.hero-img {
-  width: 50%;
+.hero-section .main-button {
+  margin-right: 8px;
 }
 
 .hero-description {
@@ -529,12 +528,13 @@ section {
   .hero-section .main-button {
     margin-right: 28px;
   }
+  .hero-overlay {
+    width: 100%;
+  }
 }
-.hero-img {
-  width: 100%;
-  margin-left: 20px;
+.hero-description {
+  flex-grow: 1;
 }
-
 .hero-description__title {
   margin-top: 25px;
   font-size: 50px;
@@ -557,6 +557,9 @@ section {
     margin-bottom: 43px;
     font-size: 24px;
   }
+}
+.stats-section {
+  background-color: var(--secondary-bcg-color);
 }
 .stats-section__title {
   visibility: hidden;
@@ -624,8 +627,6 @@ section {
   }
 }
 .about-section {
-  padding-top: 20px;
-  padding-bottom: 40px;
   background-color: var(--secondary-bcg-color);
 }
 .about-section__title {
@@ -663,6 +664,12 @@ section {
 }
 .about-section__nav .secondary-button {
   margin-bottom: 18px;
+}
+
+.about-wrapper {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .about-list {
@@ -746,6 +753,7 @@ section {
   }
 }
 .results-section {
+  background-color: var(--background-color);
   padding-top: 40px;
 }
 
@@ -1132,6 +1140,7 @@ section {
     justify-content: space-between;
     padding-top: 160px;
     padding-bottom: 160px;
+    margin-bottom: 40px;
   }
   .action-section__title {
     margin-left: 90px;
@@ -1142,12 +1151,14 @@ section {
   }
 }
 .testimonials-section {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  margin-bottom: 60px;
   background-color: var(--secondary-bcg-color);
+  margin-bottom: 60px;
 }
 
+.testimonials {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
 .testimonials__overlay {
   position: relative;
 }
@@ -1383,6 +1394,7 @@ section {
 }
 .footer__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .footer__list_item {
@@ -1445,9 +1457,6 @@ section {
   .footer__info {
     font-size: 16px;
   }
-  .footer__list {
-    justify-content: center;
-  }
   .footer__list_item {
     flex-basis: calc(33.3333333333% - 28px);
     margin-bottom: 28px;
@@ -1466,6 +1475,7 @@ section {
 }
 @media screen and (min-width: 768px) {
   .footer {
+    padding-top: 40px;
     background-color: var(--secondary-bcg-color);
   }
   .footer__wrapper {

@@ -1,11 +1,8 @@
 .hero-section {
+  background-color: var(--background-color);
   & .main-button {
-    margin-right: 12px;
+    margin-right: 8px;
   }
-}
-
-.hero-img {
-  width: 50%;
 }
 
 .hero-description {
@@ -72,19 +69,23 @@
 @media screen and (min-width: 768px) {
   .hero-section {
     display: flex;
+
     margin-top: 78px;
 
     & .main-button {
       margin-right: 28px;
     }
   }
-}
-.hero-img {
-  width: 100%;
-  margin-left: 20px;
+  .hero-overlay {
+    width: 100%;
+    // margin-left: 20px;
+  }
+  .hero-img {
+  }
 }
 
 .hero-description {
+  flex-grow: 1;
   &__title {
     margin-top: 25px;
 

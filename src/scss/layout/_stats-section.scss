@@ -1,4 +1,5 @@
 .stats-section {
+  background-color: var(--secondary-bcg-color);
   &__title {
     visibility: hidden;
   }
@@ -73,6 +74,9 @@
 
     &__item {
       flex-basis: calc(100% / 4 - 28px);
+
+      // padding-left: 50px;
+      // padding-right: 50px;
 
       font-size: 60px;
     }

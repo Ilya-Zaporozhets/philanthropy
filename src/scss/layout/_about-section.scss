@@ -1,9 +1,5 @@
 .about-section {
-  padding-top: 20px;
-  padding-bottom: 40px;
-
   background-color: var(--secondary-bcg-color);
-
   &__title {
     margin-bottom: 17px;
 
@@ -52,6 +48,12 @@
       margin-bottom: 18px;
     }
   }
+}
+.about-wrapper {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  padding-bottom: 30px;
 }
 
 .about-list {

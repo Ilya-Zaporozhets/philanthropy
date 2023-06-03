@@ -27,8 +27,9 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
-section {
-  min-width: 100vw;
+
+body {
+  background-color: var(--background-color);
 }

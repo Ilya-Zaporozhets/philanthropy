@@ -1,12 +1,11 @@
 .testimonials-section {
+  background-color: var(--secondary-bcg-color);
+  margin-bottom: 60px;
+}
+.testimonials {
   padding-top: 90px;
   padding-bottom: 90px;
 
-  margin-bottom: 60px;
-
-  background-color: var(--secondary-bcg-color);
-}
-.testimonials {
   &__overlay {
     position: relative;
     &:hover .testimonials__article,

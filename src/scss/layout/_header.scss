@@ -13,12 +13,11 @@
   align-items: center;
 
   padding-top: 10px;
+  padding-bottom: 10px;
 
   background-color: var(--background-color);
 
   & .main-button {
-    margin-right: 30px;
-
     font-size: 12px;
   }
 }

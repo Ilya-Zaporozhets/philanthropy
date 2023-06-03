@@ -47,6 +47,7 @@
 
   &__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
     &_item {
@@ -120,6 +121,8 @@
     }
   }
 }
+.footer__wrapper {
+}
 //****************************media************************
 
 @media screen and (min-width: 480px) {
@@ -135,8 +138,6 @@
     }
 
     &__list {
-      justify-content: center;
-
       &_item {
         flex-basis: calc(100% / 3 - 28px);
         margin-bottom: 28px;
@@ -161,6 +162,7 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
+    padding-top: 40px;
     background-color: var(--secondary-bcg-color);
 
     &__wrapper {
