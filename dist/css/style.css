@@ -688,11 +688,9 @@ body {
   width: 60px;
   margin-bottom: 28px;
   cursor: default;
-  -webkit-transition: -webkit-box-shadow var(--transition-property);
-  transition: -webkit-box-shadow var(--transition-property);
-  -o-transition: box-shadow var(--transition-property);
-  transition: box-shadow var(--transition-property);
-  transition: box-shadow var(--transition-property), -webkit-box-shadow var(--transition-property);
+  -webkit-transition: border-radius box-shadow var(--transition-property);
+  -o-transition: border-radius box-shadow var(--transition-property);
+  transition: border-radius box-shadow var(--transition-property);
 }
 
 .results-list__item:hover,

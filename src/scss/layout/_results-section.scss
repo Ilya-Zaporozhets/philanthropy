@@ -50,7 +50,7 @@
 
     cursor: default;
 
-    transition: box-shadow var(--transition-property);
+    transition: border-radius box-shadow var(--transition-property);
 
     &:hover,
     &:focus {
